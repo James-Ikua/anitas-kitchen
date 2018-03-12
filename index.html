@@ -4,28 +4,31 @@
 <head>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <meta charset="utf-8">
   <title></title>
 </head>
 
 <body>
-  <!-- Hambuger menu -->
-  <i id="open-menu" class="ion-grid"></i>
-  <!-- menu -->
-  <aside>
+  <div class="flag">
+    <div class="container-fluid">
+      <header class="row hbng">
+        <div class="overlay" id="myNav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-    <!-- To close our menu -->
-    <i id="close-menu" class="ion-close"></i>
-    <!-- Actual menu -->
-    <i id="the-menu">
-     <ul>
-      <li><a href="#">CONTACTS</a></li>
-      <li><a href="#">EVENTS</a></li>
-      <li><a href="#">MENU</a></li>
-     </ul>
-  </aside>
+          <div class="overlay-content">
+            <a href="#">CONTACTS</a><br>
+            <a href="#">EVENTS</a><br>
+            <a href="#">MENU</a>
+          </div>
+        </div>
+    </div>
+
+    <span onclick="openNav()" id="ham">&#9776;</i>
+
+
+
 
       <div class="row  text-center">
         <div class="col-md-6 col-md-offset-3">
@@ -182,7 +185,7 @@
     </div>
   </div>
   <script type="text/javascript" src="js/scripts.js"></script>
-  <script type="text/javascript" src="css/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="css/jquery-3.2.1.js"></script>
 </body>
 
 </html>
